@@ -40,7 +40,7 @@ class Graph {
     this.segments.splice(this.segments.indexOf(seg), 1);
   }
 
-  removePoints(point) {
+  removePoint(point) {
     const segs = this.getSegmentsWithPoint(point);
     for (const seg of segs) {
       this.removeSegment(seg);
